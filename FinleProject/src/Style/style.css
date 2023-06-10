@@ -1,0 +1,571 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 4, 2023, 6:10:58 PM
+    Author     : Sami W. Nabhan
+*/
+
+#login{
+    -fx-font-weight: bold;
+    -fx-background-color:  #3196DE;;
+    -fx-background-radius: 15;
+    -fx-font-size: 16;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#login:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 16;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#login:pressed{
+    -fx-font-weight: bold;
+    -fx-background-color: #7ac0de;
+    -fx-background-radius: 15;
+    -fx-font-size: 16;
+    -fx-text-fill: #02457A;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#register{
+    -fx-font-weight: bold;
+    -fx-background-color: #50C878;
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#register:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #2E8B57;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#register:pressed{
+    -fx-font-weight: bold;
+    -fx-background-color: #2E8B57;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#FAppitments{
+    -fx-background-color:  #3196DE;;
+    -fx-background-radius: 7;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#FAppitments:hover{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 7;
+    -fx-border-width:3;
+}
+#FAppitments:pressed{
+    -fx-background-color: #7ac0de;
+    -fx-background-radius: 7;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#WAppoitment{
+    -fx-background-color:  #3196DE;;
+    -fx-background-radius: 7;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#WAppoitment:hover{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 7;
+    -fx-border-width:3;
+}
+#WAppoitment:pressed{
+    -fx-background-color: #7ac0de;
+    -fx-background-radius: 7;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#dcomShow{
+    -fx-background-color:  #3196DE;
+    -fx-background-radius: 7;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#dcomShow:hover{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 7;
+    -fx-border-width:3;
+}
+#dcomShow:pressed{
+    -fx-background-color: #7ac0de;
+    -fx-background-radius: 7;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#bookApp{
+    -fx-background-color:  #3196DE;
+    -fx-background-radius: 7;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#bookApp:hover{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 7;
+    -fx-border-width:3;
+}
+#bookApp:pressed{
+    -fx-background-color: #7ac0de;
+    -fx-background-radius: 7;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#updateapp{
+    -fx-background-color:  #50C878;
+    -fx-background-radius: 15;
+    -fx-font-size: 13;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#updateapp:hover{
+    -fx-background-color: #2E8B57;
+    -fx-font-size: 13;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#updateapp:pressed{
+    -fx-background-color: #2E8B57;
+    -fx-background-radius: 15;
+    -fx-font-size: 13;
+    -fx-text-fill: white;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#search{
+    -fx-background-color: #50C878;
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#search:hover{
+    -fx-background-color: #2E8B57;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#search:pressed{
+    -fx-background-color: #2E8B57;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#showall{
+    -fx-background-color: #02457A;;
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#showall:hover{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#showall:pressed{
+    -fx-background-color: #7ac0de;
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#update{
+    -fx-background-color: #50C878;
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#update:hover{
+    -fx-background-color: #2E8B57;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#update:pressed{
+    -fx-background-color: #2E8B57;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#del{
+    -fx-background-color: #ff0000;
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#del:hover{
+    -fx-background-color: #b30000;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#del:pressed{
+    -fx-background-color: #b30000;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#addNew{
+    -fx-background-color: #02457A;
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#addNew:hover{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#addNew:pressed{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#addapp{
+    -fx-background-color: #02457A;
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#addapp:hover{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#addapp:pressed{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#delapp{
+    -fx-background-color: #ff0000;
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#delapp:hover{
+    -fx-background-color: #b30000;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#delapp:pressed{
+    -fx-background-color: #b30000;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#finish{
+    -fx-background-color: #02457A;
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#finish:hover{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#finish:pressed{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#showallapp{
+    -fx-background-color: #02457A;
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#showallapp:hover{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#showallapp:pressed{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#log{
+    -fx-background-color: #02457A;
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#log:hover{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#log:pressed{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 14;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#cancel{
+    -fx-background-color: #ff0000;
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#cancel:hover{
+    -fx-background-color: #b30000;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#cancel:pressed{
+    -fx-background-color: #b30000;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#username ,#password,#date,#day,#time{
+    -fx-background-color: transparent;
+    -fx-border-color: gray;
+    -fx-border-radius: 8px;
+    -fx-padding: 0 0 0 10px;
+    -fx-background-insets: 0;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: gray;
+}
+#GoBack{
+    -fx-font-weight: bold;
+    -fx-background-color: #50C878;
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#GoBack:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #2E8B57;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#GoBack:pressed{
+    -fx-font-weight: bold;
+    -fx-background-color: #2E8B57;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#LoginLogoTXT {
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 24px;
+    -fx-text-fill: #3196DE;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+#AdminLoginPage{
+    -fx-background-color:  #3196DE;;
+    -fx-background-radius: 15;
+    -fx-font-size: 13;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#AdminLoginPage:hover{
+    -fx-background-color: #7ac0de;
+    -fx-font-size: 13;
+    -fx-text-fill: #02457A;
+    -fx-background-radius: 15;
+    -fx-border-width:3;
+}
+#AdminLoginPage:pressed{
+    -fx-background-color: #7ac0de;
+    -fx-background-radius: 15;
+    -fx-font-size: 13;
+    -fx-text-fill: #02457A;
+    -fx-border-width:3;
+    -fx-rotate: 7;
+}
+#ShowFreeApp{
+    -fx-font-weight: bold;
+    -fx-background-color:   #4dab7e;
+    -fx-background-radius: 6;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#ShowFreeApp:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #5c9178;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-border-width:3;
+}
+#bookedApp{
+    -fx-font-weight: bold;
+    -fx-background-color:   #4dab7e;
+    -fx-background-radius: 6;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#bookedApp:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #5c9178;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-border-width:3;
+}
+#logout11{
+    -fx-font-weight: bold;
+    -fx-background-color: #02457A;
+    -fx-background-radius: 6;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#logout11:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #192a4d;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-border-width:3;
+}
+#userMang{
+    -fx-font-weight: bold;
+    -fx-background-color:   #4dab7e;
+    -fx-background-radius: 6;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#userMang:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #5c9178;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-border-width:3;
+}
+#appointments{
+    -fx-font-weight: bold;
+    -fx-background-color:   #4dab7e;
+    -fx-background-radius: 6;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#appointments:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #5c9178;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-border-width:3;
+}
+#logout{
+    -fx-font-weight: bold;
+    -fx-background-color: #02457A;
+    -fx-background-radius: 6;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+#logout:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #192a4d;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-border-width:3;
+}

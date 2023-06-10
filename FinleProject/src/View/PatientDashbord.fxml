@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="723.0" prefWidth="1500.0" style="-fx-background-color: #ddd;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PatientDashbordController">
+   <children>
+      <AnchorPane prefHeight="85.0" prefWidth="1500.0" style="-fx-background-color: #3196DE;">
+         <children>
+            <VBox layoutY="44.0" spacing="25.0" />
+            <Label alignment="CENTER" layoutX="14.0" layoutY="25.0" prefHeight="36.0" prefWidth="253.0" text="Patient Dashboard" textFill="#d9dada">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <effect>
+                  <Glow level="0.44" />
+               </effect>
+            </Label>
+            <Button fx:id="ShowFreeApp" layoutX="318.0" layoutY="25.0" mnemonicParsing="false" onAction="#ShowFreeAppoitmentsBtn" prefHeight="38.0" prefWidth="210.0" stylesheets="@../Style/style.css" text=" Free Appoitments" textFill="WHITE">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout11" layoutX="1232.0" layoutY="26.0" mnemonicParsing="false" onAction="#logoutBtn" prefHeight="38.0" prefWidth="82.0" stylesheets="@../Style/style.css" text="Logout" textFill="WHITE">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="bookedApp" layoutX="540.0" layoutY="23.0" mnemonicParsing="false" onAction="#ShowBookedAppoitmentsBtn" prefHeight="40.0" prefWidth="210.0" stylesheets="@../Style/style.css" text=" Booked Appoitments" textFill="WHITE">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="24.0" layoutY="106.0" prefHeight="593.0" prefWidth="1312.0" style="-fx-background-color: #fff; -fx-background-radius: 40px;">
+         <children>
+            <TableView fx:id="AppTable" layoutX="36.0" layoutY="62.0" prefHeight="295.0" prefWidth="747.0">
+              <columns>
+                <TableColumn fx:id="AppID" prefWidth="115.20001220703125" text="Appoitment-ID" />
+                <TableColumn fx:id="AppDay" prefWidth="164.79998779296875" text="Appoitment-Day" />
+                  <TableColumn fx:id="AppTime" prefWidth="138.75" text="Appoitment-Time" />
+                  <TableColumn fx:id="AppStatus" prefWidth="175.20001220703125" text="Appoitment-Status" />
+                  <TableColumn fx:id="AppDate" prefWidth="150.4000244140625" text="Appoitment-Date" />
+              </columns>
+            </TableView>
+            <TextArea fx:id="doctorCommecnt" layoutX="798.0" layoutY="62.0" prefHeight="295.0" prefWidth="447.0" promptText="Doctor Commecnt For Finshed Appoitment" />
+            <Button fx:id="bookApp" layoutX="36.0" layoutY="14.0" mnemonicParsing="false" onAction="#BookAppBtn" prefHeight="35.0" prefWidth="129.0" stylesheets="@../Style/style.css" text="Book Appoitment" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="WAppoitment" layoutX="334.0" layoutY="366.0" mnemonicParsing="false" onAction="#WatingAppoitmentBtn" prefHeight="35.0" prefWidth="152.0" stylesheets="@../Style/style.css" text="Wating Appoitment" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="FAppitments" layoutX="36.0" layoutY="366.0" mnemonicParsing="false" onAction="#FinshedAppitmentsBtn" prefHeight="35.0" prefWidth="152.0" stylesheets="@../Style/style.css" text="Finshed Appoitment" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="dcomShow" layoutX="624.0" layoutY="366.0" mnemonicParsing="false" onAction="#ShowDoctorCommecnt" prefHeight="35.0" prefWidth="159.0" stylesheets="@../Style/style.css" text="Doctor Comment" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="739.0" prefWidth="1009.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminDashbordController">
+   <children>
+      <AnchorPane minHeight="-Infinity" prefHeight="94.0" prefWidth="1009.0" style="-fx-background-color: #3196DE;">
+         <children>
+            <VBox layoutX="1.0" layoutY="275.0" spacing="30.0" />
+            <Button fx:id="userMang" layoutX="486.0" layoutY="31.0" mnemonicParsing="false" onAction="#userMangBtn" prefHeight="30.0" prefWidth="170.0" stylesheets="@../Style/style.css" text="User Managment" textFill="WHITE">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" layoutX="865.0" layoutY="31.0" mnemonicParsing="false" onAction="#logoutBtn" prefHeight="31.0" prefWidth="124.0" stylesheets="@../Style/style.css" text="Logout" textFill="WHITE">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="27.0" prefHeight="39.0" prefWidth="447.0" text="AdminDashbord-UseraManagment" textFill="#d9dada">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <effect>
+                  <Glow level="0.44" />
+               </effect>
+            </Label>
+            <Button fx:id="appointments" layoutX="675.0" layoutY="31.0" mnemonicParsing="false" onAction="#appointmentsBtn" prefHeight="30.0" prefWidth="170.0" stylesheets="@../Style/style.css" text="Appointments" textFill="WHITE">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="PatientTabel" layoutX="22.0" layoutY="151.0" prefHeight="295.0" prefWidth="898.0">
+        <columns>
+          <TableColumn fx:id="idc" minWidth="44.0" prefWidth="44.0" text="ID" />
+            <TableColumn fx:id="Passwordc" minWidth="93.60003662109375" prefWidth="99.20001220703125" text="Password" />
+            <TableColumn fx:id="agec" minWidth="50.4000244140625" prefWidth="50.4000244140625" text="Age" />
+            <TableColumn fx:id="emailc" minWidth="89.5999755859375" prefWidth="108.0" text="Email" />
+            <TableColumn fx:id="genderc" minWidth="0.0" prefWidth="0.0" text="Phone" />
+            <TableColumn fx:id="phonec" minWidth="59.199951171875" prefWidth="133.599853515625" text="Phone" />
+            <TableColumn fx:id="genderc" minWidth="73.60009765625" prefWidth="83.2000732421875" text="Gender" />
+            <TableColumn fx:id="rolec" minWidth="89.5999755859375" prefWidth="98.0" text="Role" />
+            <TableColumn fx:id="fnamec" minWidth="92.79998779296875" prefWidth="95.199951171875" text="Firstname" />
+            <TableColumn fx:id="lnamec" minWidth="55.2000732421875" prefWidth="90.39996337890625" text="Lastname" />
+          <TableColumn fx:id="usernamec" minWidth="90.4000244140625" prefWidth="96.79998779296875" text="Username" />
+        </columns>
+      </TableView>
+      <Button fx:id="update" layoutX="424.0" layoutY="460.0" mnemonicParsing="false" onAction="#updateBtn" prefHeight="35.0" prefWidth="150.0" stylesheets="@../Style/style.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="del" layoutX="238.0" layoutY="460.0" mnemonicParsing="false" onAction="#deleteBtn" prefHeight="35.0" prefWidth="150.0" stylesheets="@../Style/style.css" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="addNew" layoutX="30.0" layoutY="460.0" mnemonicParsing="false" onAction="#addNewBtn" prefHeight="35.0" prefWidth="150.0" stylesheets="@../Style/style.css" text="Add New Patient+" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="showall" layoutX="769.0" layoutY="101.0" mnemonicParsing="false" onAction="#showallBtn" prefHeight="35.0" prefWidth="150.0" stylesheets="@../Style/style.css" text="ShowAllPaitent" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="fnameTXT" layoutX="35.0" layoutY="105.0" prefHeight="26.0" prefWidth="202.0" promptText="Search by firstname ..." />
+      <Button fx:id="search" layoutX="247.0" layoutY="104.0" mnemonicParsing="false" onAction="#searchBtn" prefHeight="28.0" prefWidth="80.0" stylesheets="@../Style/style.css" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

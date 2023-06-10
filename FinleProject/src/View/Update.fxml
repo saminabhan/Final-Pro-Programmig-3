@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="592.0" prefWidth="568.0" style="-fx-background-color: #ddd;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateController">
+   <children>
+      <AnchorPane prefHeight="324.0" prefWidth="569.0" style="-fx-background-color: #3196DE;" />
+      <AnchorPane layoutX="87.0" layoutY="23.0" prefHeight="546.0" prefWidth="389.0" style="-fx-background-color: #fff; -fx-background-radius: 40px;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="138.0" layoutY="339.0" prefWidth="120.0" text="Status">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Appfree" layoutX="110.0" layoutY="368.0" mnemonicParsing="false" prefWidth="110.0" text="Free">
+               <toggleGroup>
+                  <ToggleGroup fx:id="statusRadio" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Appbook" layoutX="231.0" layoutY="368.0" mnemonicParsing="false" prefWidth="110.0" text="Booked" toggleGroup="$statusRadio" />
+            <Button fx:id="updateapp" layoutX="143.0" layoutY="417.0" mnemonicParsing="false" onAction="#updateappBtn" prefHeight="35.0" prefWidth="110.0" stylesheets="@../Style/style.css" text="Update" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="LoginLogoTXT" layoutX="99.0" layoutY="23.0" prefHeight="35.0" prefWidth="198.0" stylesheets="@../Style/style.css" text="Update">
+               <font>
+                  <Font name="Bell MT" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="129.0" layoutY="106.0" prefHeight="17.0" prefWidth="138.0" text="Appointment Date">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="date" layoutX="110.0" layoutY="141.0" prefHeight="26.0" prefWidth="176.0" stylesheets="@../Style/style.css" />
+            <TextField fx:id="day" layoutX="110.0" layoutY="217.0" prefHeight="26.0" prefWidth="176.0" stylesheets="@../Style/style.css" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="126.0" layoutY="265.0" prefHeight="17.0" prefWidth="144.0" text="Appointment Time">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="134.0" layoutY="189.0" prefHeight="17.0" prefWidth="129.0" text="Appointment Day">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="time" layoutX="110.0" layoutY="289.0" prefHeight="26.0" prefWidth="176.0" stylesheets="@../Style/style.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

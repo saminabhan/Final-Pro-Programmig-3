@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="927.0" prefWidth="1500.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.appoitmentsController">
+   <children>
+      <AnchorPane minHeight="-Infinity" prefHeight="119.0" prefWidth="1500.0" style="-fx-background-color: #3196DE;">
+         <children>
+            <VBox layoutX="1.0" layoutY="275.0" spacing="30.0" />
+            <Button fx:id="userMang" layoutX="515.0" layoutY="50.0" mnemonicParsing="false" onAction="#userMangBtn" prefHeight="30.0" prefWidth="170.0" stylesheets="@../Style/style.css" text="User Managment" textFill="WHITE">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="appointments" layoutX="714.0" layoutY="50.0" mnemonicParsing="false" onAction="#appointmentsBtn" prefHeight="30.0" prefWidth="170.0" stylesheets="@../Style/style.css" text="Appointments" textFill="WHITE">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" layoutX="957.0" layoutY="50.0" mnemonicParsing="false" onAction="#logoutBtn" prefHeight="31.0" prefWidth="138.0" stylesheets="@../Style/style.css" text="Logout" textFill="WHITE">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="21.0" layoutY="49.0" prefHeight="36.0" prefWidth="394.0" text="AdminDashbord-Appoitments" textFill="#d9dada">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <effect>
+                  <Glow level="0.44" />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="AppointmentTable" layoutX="452.0" layoutY="200.0" prefHeight="295.0" prefWidth="609.0">
+         <columns>
+            <TableColumn fx:id="idapp" minWidth="44.0" prefWidth="48.0" text="ID" />
+            <TableColumn fx:id="appdate" minWidth="90.4000244140625" prefWidth="176.0" text="Appointment Date" />
+            <TableColumn fx:id="appday" minWidth="59.0" prefWidth="135.0" text="Appointment Day" />
+            <TableColumn fx:id="apptime" minWidth="0.0" prefWidth="149.599853515625" text="Appointment Time" />
+            <TableColumn fx:id="appstatus" minWidth="50.4000244140625" prefWidth="100.0" text="Status" />
+         </columns>
+      </TableView>
+      <Button fx:id="updateapp" layoutX="456.0" layoutY="505.0" mnemonicParsing="false" onAction="#updateappBtn" prefHeight="35.0" prefWidth="94.0" stylesheets="@../Style/style.css" text="Update" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="delapp" layoutX="584.0" layoutY="505.0" mnemonicParsing="false" onAction="#delappbtn" prefHeight="35.0" prefWidth="94.0" stylesheets="@../Style/style.css" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="showallapp" layoutX="899.0" layoutY="157.0" mnemonicParsing="false" onAction="#showallappBtn" prefHeight="30.0" prefWidth="162.0" stylesheets="@../Style/style.css" text="ShowAppoitments" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="14.0" layoutY="152.0" prefHeight="546.0" prefWidth="389.0" style="-fx-background-color: #fff; -fx-border-radius: 10;">
+         <children>
+            <VBox layoutX="198.0" layoutY="175.0" prefHeight="144.0" prefWidth="150.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="date" />
+                  <TextField fx:id="day" />
+                  <TextField fx:id="time" prefWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="28.0" layoutY="166.0" prefHeight="136.0" prefWidth="170.0" spacing="35.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="138.0" text="Appointment Date">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="129.0" text="Appointment Day">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="144.0" text="Appointment Time">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="319.0" prefWidth="120.0" text="Status">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Appfree" layoutX="198.0" layoutY="319.0" mnemonicParsing="false" prefWidth="110.0" text="Free">
+               <toggleGroup>
+                  <ToggleGroup fx:id="statusRadio" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="Appbook" layoutX="284.0" layoutY="319.0" mnemonicParsing="false" prefWidth="110.0" text="Booked" toggleGroup="$statusRadio" />
+            <Button fx:id="addapp" layoutX="98.0" layoutY="374.0" mnemonicParsing="false" onAction="#addappbtn" prefHeight="35.0" prefWidth="210.0" stylesheets="@../Style/style.css" text="Add New Appointment" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="fnameTXT" layoutX="456.0" layoutY="158.0" prefHeight="30.0" prefWidth="188.0" promptText="Search by name ..." />
+      <Button fx:id="search" layoutX="654.0" layoutY="158.0" mnemonicParsing="false" onAction="#searchBtn" prefHeight="18.0" prefWidth="94.0" stylesheets="@../Style/style.css" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="finish" layoutX="933.0" layoutY="516.0" mnemonicParsing="false" onAction="#finishbtn" prefHeight="35.0" prefWidth="138.0" stylesheets="@../Style/style.css" text="Finish" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="452.0" layoutY="563.0" prefHeight="26.0" prefWidth="490.0" text="From Here Doctor can Add a commecnt:  ">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="doctorCommecnt" layoutX="457.0" layoutY="599.0" prefHeight="200.0" prefWidth="489.0" />
+   </children>
+</AnchorPane>
